@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'LoadingPage.dart';
 import 'Home.dart';
+import 'NewConnection.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: LoadingPage(),
-      home: Home(),
+      home: NewConnection(),
       // home: Register(),
     );
   }

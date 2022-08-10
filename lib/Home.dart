@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'NewConnection.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -94,7 +95,10 @@ class _HomeState extends State<Home> {
             icon: Padding(
               padding: const EdgeInsets.only(left: 4.0),
               child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => NewConnection()));
+                  },
                   icon: Icon(
                     Icons.call_rounded,
                     color: Colors.pink[800],
