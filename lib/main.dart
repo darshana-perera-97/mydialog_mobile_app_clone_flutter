@@ -3,6 +3,7 @@ import 'LoadingPage.dart';
 import 'Home.dart';
 import 'NewConnection.dart';
 import 'Profile.dart';
+import 'Transactions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: LoadingPage(),
-      home: Profile(),
+      home: Transactions(),
       // home: Register(),
     );
   }

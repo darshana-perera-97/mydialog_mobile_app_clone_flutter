@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'NewConnection.dart';
 import 'Profile.dart';
-
+import 'Transactions.dart';
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
 
@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
                         spreadRadius: 0.5)
                   ]),
               child: Padding(
-                padding: const EdgeInsets.only(right: 5.0,bottom:5.0),
+                padding: const EdgeInsets.only(right: 5.0, bottom: 5.0),
                 child: IconButton(
                     onPressed: () {},
                     icon: Icon(
@@ -81,8 +81,8 @@ class _HomeState extends State<Home> {
             padding: const EdgeInsets.only(right: 4.0),
             child: IconButton(
                 onPressed: () {
-                  Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Profile()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Profile()));
                 },
                 icon: Icon(
                   Icons.people_rounded,
@@ -100,8 +100,10 @@ class _HomeState extends State<Home> {
               padding: const EdgeInsets.only(left: 4.0),
               child: IconButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => NewConnection()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => NewConnection()));
                   },
                   icon: Icon(
                     Icons.call_rounded,
@@ -327,7 +329,12 @@ class _HomeState extends State<Home> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 TextButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => Transactions()));
+                                    },
                                     child: Container(
                                       decoration: BoxDecoration(
                                           color: Colors.white,
