@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:mydialog_mobile_app_clone_flutter/Qreload.dart';
 import 'NewConnection.dart';
 import 'Profile.dart';
 import 'Transactions.dart';
 import 'Noti.dart';
 import 'Reload.dart';
+import 'Qreload.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -72,7 +74,10 @@ class _HomeState extends State<Home> {
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Qreload()));
+                },
                 icon: Icon(
                   Icons.subject,
                   color: Colors.pink,

@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: LoadingPage(),
+      home: LoadingPage(),
       // home: Reload(),
-      home: Noti(),
+      // home: Noti(),
       // home: Register(),
     );
   }

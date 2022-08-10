@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'Home.dart';
 
-class Reload extends StatefulWidget {
-  Reload({Key? key}) : super(key: key);
+class Qreload extends StatefulWidget {
+  Qreload({Key? key}) : super(key: key);
 
   @override
-  State<Reload> createState() => _ReloadState();
+  State<Qreload> createState() => _QreloadState();
 }
 
-class _ReloadState extends State<Reload> {
+class _QreloadState extends State<Qreload> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +71,7 @@ class _ReloadState extends State<Reload> {
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Telephone Number'),
+                            hintText: '771461925'),
                       ),
                     ),
                   ),
@@ -88,7 +88,7 @@ class _ReloadState extends State<Reload> {
                       padding: const EdgeInsets.only(left: 20.0),
                       child: TextField(
                         decoration: InputDecoration(
-                            border: InputBorder.none, hintText: 'Amount'),
+                            border: InputBorder.none, hintText: 'Rs.50'),
                       ),
                     ),
                   ),
