@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'NewConnection.dart';
+import 'Profile.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -79,7 +80,10 @@ class _HomeState extends State<Home> {
           Padding(
             padding: const EdgeInsets.only(right: 4.0),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Profile()));
+                },
                 icon: Icon(
                   Icons.people_rounded,
                   color: Colors.pink,
