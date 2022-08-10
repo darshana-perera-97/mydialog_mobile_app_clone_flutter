@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'NewConnection.dart';
 import 'Profile.dart';
 import 'Transactions.dart';
+import 'Reload.dart';
+
+
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
 
@@ -358,7 +361,12 @@ class _HomeState extends State<Home> {
                                       ),
                                     )),
                                 TextButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => Reload()));
+                                    },
                                     child: Container(
                                       decoration: BoxDecoration(
                                           color: Colors.purple,

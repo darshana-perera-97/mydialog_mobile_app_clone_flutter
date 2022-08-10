@@ -106,6 +106,26 @@ class _TransactionsState extends State<Transactions> {
               children: [
                 Text("10 Aug 2022"),
                 // Text("07:51"),
+                Text("Recharge"),
+                Text(
+                  "+ 100.00",
+                  style: TextStyle(color: Colors.pink),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 2,
+            width: MediaQuery.of(context).size.width*0.85 ,
+            decoration: BoxDecoration(color: Colors.black26),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(18),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("10 Aug 2022"),
+                // Text("07:51"),
                 Text("SMS"),
                 Text(
                   "-0.12",
