@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'NewConnection.dart';
 import 'Profile.dart';
 import 'Transactions.dart';
+import 'Noti.dart';
 import 'Reload.dart';
-
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -59,7 +59,10 @@ class _HomeState extends State<Home> {
           Padding(
             padding: const EdgeInsets.all(12),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Noti()));
+                },
                 icon: Icon(
                   Icons.notifications,
                   color: Colors.pink,
@@ -336,7 +339,8 @@ class _HomeState extends State<Home> {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => Transactions()));
+                                              builder: (context) =>
+                                                  Transactions()));
                                     },
                                     child: Container(
                                       decoration: BoxDecoration(
