@@ -19,20 +19,34 @@ class _HomeState extends State<Home> {
         children: [
           Padding(
             padding: const EdgeInsets.all(12),
-            child: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.home_rounded,
+            child: Container(
+              decoration: BoxDecoration(
                   color: Colors.pink,
-                  size: 30,
-                )),
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black26,
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5)
+                  ]),
+              child: Padding(
+                padding: const EdgeInsets.only(right: 5.0,bottom:5.0),
+                child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.home_rounded,
+                      color: Colors.white,
+                      size: 30,
+                    )),
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(12),
             child: IconButton(
                 onPressed: () {},
                 icon: Icon(
-                  Icons.domain_rounded,
+                  Icons.domain_outlined,
                   color: Colors.pink,
                   size: 30,
                 )),
@@ -1206,7 +1220,6 @@ class _HomeState extends State<Home> {
                                           ),
                                         )),
                                   ),
-                                  
                                 ],
                               ),
                             ),
